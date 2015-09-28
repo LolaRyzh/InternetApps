@@ -1,0 +1,25 @@
+.style{ 
+	background-image: url('../img/mts.jpeg');
+	height: 300px;
+	width: 100%;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	 background-position:  top center; 
+
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+
+   .table{
+
+   	width: 100%; /* Ширина таблицы */ 
+    border-spacing: 5px 10px; /* Расстояние между ячейками */ 
+   }
