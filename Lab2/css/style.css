@@ -1,0 +1,44 @@
+.fig{ 
+	text-align: center;
+	}
+
+.textSTYLE{
+	text-align: center;
+	font-family: Calibri;
+	color:#FFCC99;
+	font-size: 20;
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+
+ .textSTYLE1 {
+ 	text-align: center;
+	font-family: Segoe Print;
+	color:#FFCC99;
+	font-size: 28;
+
+   }
+
+   body { 
+			background-image: url("../img/fon.jpg"); 
+			background-repeat: no-repeat; 
+			background-position: center;
+			background-attachment: fixed;
+			background-color: black;
+			background-size: 100%;
+			 } 
+
+.jumbotron {
+
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 8px;
+  border-radius: 10px;  
+}
+
+.jumbotron:nth-child(even){
+	background-color: orange;
+}

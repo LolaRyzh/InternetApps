@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+	<title>Афиша</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" ></link>
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
+	<link href="css/style.css" type="text/css" rel="stylesheet"></link>	
+</head>
+<body>	
+
+	<p class="fig"><img src="img/tumblr_static_7723ky260ds88k8so0k44o0ck.png" width="700px" height="160px" align="center" > </p>
+	<p align="center"><font color= "#FF0033" size="15" face="Segoe Script"><b>28 ноября, Москва, Олимпийский</b></font></p>
+
+    <p class="fig"><img src="img/471.jpg" width="1000px" height="300px" align="center" > </p>
+
+	<center> 
+		<table border="3"><tr>
+			<td bgcolor= "#333333" height="100%" width="1000px"> <p align= "center" class="textSTYLE">
+
+    System Of A Down (SOAD) — американская музыкальная группа из Лос-Анджелеса, основанная в 1995 году в Калифорнии. Все пять выпущенных группой студийных альбомов стали платиновыми. Национальный состав группы является армянским.<br><br>
+    <b><i>Текущий состав:<br></i></b>
+    <b>Серж Танкян</b>  — вокал, гитара, клавишные, синтезатор. Родился в Бейруте 21 августа 1967 года и провёл там детство. В возрасте восьми лет вместе с семьёй переехал в Лос-Анджелес, где начал учиться в армянской школе «Rose and Alex Pilibos Armenian School» и изучать маркетинг.<br>
+    <b>Шаварш «Шаво» Одаджян</b>  — бас-гитара, бэк-вокал. Родился в Ереване 22 апреля 1974 года. В раннем возрасте переехал в Италию, затем в Лос-Анджелес. Поступил в ту же школу, что и Серж, но из-за разницы в возрасте не был с ним знаком.<br>
+    <b>Дарон Малакян</b>  — гитара, бэк-вокал, вокал. Родился в Глендейле, штат Калифорния, 18 июля 1975 года. Вскоре переехал в Лос-Анджелес. Также учился в «Rose and Alex Pilibos Armenian School».<br>
+    <b>Джон Долмаян</b>  — ударные. Родился в Бейруте 15 июля 1973 года. С другими участниками SOAD познакомился на одном из концертов групп «тяжёлого метала». В 1997 году заменил в группе Энди Хачатуряна.<br><br>
+    <i><b>«System of a Down — неотъемлемая часть новой революционной волны в тяжёлом роке. На первый взгляд может показаться, что эта группа — ещё одна разновидность Rage Against the Machine, но во всём, что касается музыки, они настоящие металлисты, чьи песни впитали панковский подход, рифмы в духе Pantera и вокальные приёмы в стиле Майка Паттона»(c)</b></i></p>
+
+   
+
+ <center><table border="3"><tr><td height="400" width="600"><div align="center"><iframe width="550" height="350" src="https://www.youtube.com/embed/GDdijLKpuCE" frameborder="0" allowfullscreen></iframe><font color="#FFFFFF" size="5" face="Arial">"Chop Suey!" 2002</font></div></td></tr></table></center><br> -->
+
+ <center><table><tr><td width="300px" height="200px"> <font size="5" color="#FFFFFF">Ждём Вас!<br>г. Москва, Олимпийский проспект, 16 <br><br><font color="#FF9966"> <i>Заказ билетов:</i></font><br> <b>(495) 550-55-00 </b><br><br>
+
+</td><td width="600px" height="400px"><p align="right"><script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=FzlJqq7mpYcAyuh0w833_Ao3bBLYZEKU&width=400&height=300&lang=ru_RU&sourceType=constructor"></script></p></td></tr>   </table></center> 
+
+<div id="commentsArea">
+  <div hidden="true">
+  </div>
+  <div  style='color:#FFCC99;  font-size: 20;' hidden="true">
+    <h3></h3>
+    <h4></h4>
+    <div id="Alert" class="alert alert-danger" role="alert">Введите имя и комментарий!</div>
+    
+  </div>
+
+  <div class="jumbotron" hidden="true" background-color="#CC9966">
+  <h2></h2>
+  <h4></h4>
+  <p><input type="button" class="btn btn-primary delCommentBtn" value="Удалить комментарий"/></p>
+  </div>
+
+</div>
+
+	<p align="center" class="textSTYLE1"> <b>Комментарии и отзывы:</b> </p>
+<center><form name="test" method="post" action="input1.php">
+  <p><b><font color="#FFCC99">Ваше имя:</font></b><br>
+   <input type="text" id='commentAuthor' size="40">
+  </p>
+ 
+  <font color="#FFCC99"><p>Комментарий<Br></font>
+   <textarea name="comment" id='commentTextArea' cols="40" rows="3"></textarea></p>
+  < <p><input type="button" class="btn btn-success"id='addCommentBtn' value="Отправить"> 
+<input type="reset" class="btn btn-primary" value="Очистить"></p> 
+   
+ </form></center>
+
+ <center>
+  <div id="notComment" style="margin: 20px;">
+  </div>
+</center>
+
+ </td></tr>
+      </table>
+</center>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script>
+
+    $('#addCommentBtn').click(
+      function() 
+      { 
+
+        var newCommentText = $('#commentTextArea').val();
+        var newCommentAuthor = $('#commentAuthor').val();
+
+        var newCommentInnerHtml = "<div class=\"jumbotron\"><h2>" + newCommentAuthor + "</h2><h4>" + newCommentText + "</h4><input type=\"button\" class=\"btn btn-primary delCommentBtn\" value=\"Удалить комментарий\"/></div>";
+
+         if( !newCommentText || !newCommentAuthor){
+        var w=" <div class='bs-example'><div class='alert alert-warning'><a href='#' class='close' data-dismiss='alert'>&times;</a><strong>Warning!</strong><br>Комментарий не введен</div></div> ";
+        document.getElementById('notComment').innerHTML=w;        
+         }
+         else
+         {
+          $("#notComment").empty();
+          $('#commentsArea').append(newCommentInnerHtml);
+
+        }      
+       
+       });
+
+
+  $(document).on('click', '.delCommentBtn', function()
+  { 
+        $(this).parent().remove();
+   });   
+
+  </script>
+ 
+</body>
+</html>
