@@ -1,0 +1,38 @@
+.row {
+    padding: 3px;
+}
+
+.panel-heading > h4 {
+    display: inline;
+}
+
+#googleGraphs {
+    height: 100%;
+}
+
+.graphsRow {
+    height: 100%;
+}
+
+    .graphsRow > .col-md-12 {
+        height: 100%;
+    }
+
+
+body {
+    /*background-image: url('../image/clouds1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.canvasjs-chart-canvas {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.graphArea {
+    padding: 4px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+}

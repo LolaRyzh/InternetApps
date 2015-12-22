@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+    <div class="text-center">
+        <h4>
+            Прогноз погоды
+        </h4>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="controlsArea" class="form-group form-inline">
+                                    <label for="cbCity">Выберите город:</label>
+                                    <select id="cbCity" class="form-control"></select>
+                                    <button id="btnGetCityForecast" class="btn btn-default btn-sm form-control">Показать прогноз</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="sameCityPanel" class="form-group form-inline text-center " hidden>
+                                    Города неподалёку:
+                                    <div id="sameCitysButtonsArea" class="btn-group"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="resultPanel" hidden>
+                                <div class="panel panel-default" id="mainCityPanel">
+                                    <div class="panel-heading"><h4 id="mainCityName"></h4></div>
+                                    <div class="panel-body">
+                                        <p id="mainCityTemp"></p>
+                                        <p id="mainCityPressure"></p>
+                                        <p id="mainCityHumanity"></p>
+                                        <p id="mainCityWind"></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default" id="secondCityPanel" hidden>
+                                    <div class="panel-heading">
+                                        <h4 id="secondCityName"></h4>
+                                        <button class="btn btn-info btn-sm" id="btnRemoveSecondForecast">Скрыть прогноз</button>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p id="secondCityTemp"></p>
+                                        <p id="secondCityPressure"></p>
+                                        <p id="secondCityHumanity"></p>
+                                        <p id="secondCityWind"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="googleGraphs" hidden="true" class="col-md-8">
+                <div class="row">
+                    <div class="form-group form-inline text-center">
+                        <label for="cbGraphsInterval">Выберите период прогноза:</label>
+                        <select id="cbGraphsInterval" class="form-control">
+                            <option value="1" selected="true">1 день</option>
+                            <option value="2">2 дня</option>
+                            <option value="3">3 дня</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row graphsRow">
+                    <div class="col-md-12">
+                        <div id="tempGraph" class="graphArea" style="height:50%"></div>
+                        <div id="pressureGraph" class="graphArea" style="height:50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-2.1.4.js"></script>
+    <script src="scripts/jquery.canvasjs.min.js"></script>
+    <script src="data/cityR.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
